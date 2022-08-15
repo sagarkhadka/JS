@@ -3,10 +3,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS</title>
 </head>
+
+<style>
+    body {
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        font-family:'integral cf';
+        color: white;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gameBody form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #numInput {
+        padding: 10px 20px;
+        font: 18px 'integral cf';
+        border: 0;
+    }
+
+    #numInput:focus {
+        outline: none;
+    }
+
+    .check {
+        margin-top: 10px;
+        font: 18px 'integral cf';
+        padding: 10px;
+        border: 0;
+        transition: all 25ms;
+    }
+
+    .check:hover {
+        background-color: #f6d365;
+        color: white;
+        filter: drop-shadow(0 2mm 4mm rgba(75, 74, 75, 0.2));
+    }
+</style>
+
 <body>
-    <h1>js</h1>
-    <script src="./app.js"></script>
+    <div class="body">
+        <h1>Guess Num</h1>
+        <div class="gameBody">
+            <form action="" onsubmit="return false">
+                <input type="number" name="" id="numInput">
+                <button class="check">Check</button>
+            </form>
+            <div class="guessTry">
+                <span>Number of tries: <span class="try">0</span></span>
+                <span class="status" style="color: red"></span> <br>
+                <span class="sucess" style="color: green"></span> <br>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./app.js"></script> -->
+    <script src="./guessNum.js"></script>
 </body>
-</html> 
+</html>
