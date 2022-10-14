@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'century gothic';
+}
+
+.game {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess-me {
+  height: 200px;
+  width: 285px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-group button {
+  padding: 8px 16px;
+  border: .25px solid black;
+  border-radius: 0;
+  background-color: #f2f7f2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.result {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: -30px;
+}
+
+.wrong {
+  color: red;
+}
+
+.correct {
+  color: green;
+}
